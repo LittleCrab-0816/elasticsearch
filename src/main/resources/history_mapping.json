@@ -1,0 +1,26 @@
+{
+
+  "mappings" : {
+    "dynamic": false,
+    "properties": {
+      "productid": {
+        "type": "long"
+      },
+      "name": {
+        "type": "text",
+        "index": true,
+        "analyzer": "ik_max_word"
+      },
+      "short_name": {
+        "type": "text",
+        "index": true,
+        "analyzer": "ik_max_word"
+      },
+      "desc": {
+        "type": "text",
+        "index": true,
+        "analyzer": "ik_max_word"
+      }
+    }
+  }
+}

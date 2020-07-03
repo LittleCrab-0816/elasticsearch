@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: elasticsearch-study
+
+
+logging:
+  level:
+    root: info
+
+
+elastic:
+  clusterAddress: 10.151.150.23:9200
+  scheme: http
+  #设置请求的超时时间
+  connection-timeout: 5000
+  socket-timeout: 40000
+  connection-request-timeout: 1000
+  #设置并发数
+  connection-total: 30
+  connection-common: 10
+  history:
+    type: study
+    name: study-history
